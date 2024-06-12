@@ -1,0 +1,18 @@
+<?php
+
+class Venda 
+{
+    private $data;
+    private $produto;
+    private $qtdProduto;
+    private $valorTotal;
+
+    public function __contruct($data, $produto,$qtdProduto,$valorTotal)
+    {
+        $this->data = $data;
+        
+    }
+}
+
+
+?>

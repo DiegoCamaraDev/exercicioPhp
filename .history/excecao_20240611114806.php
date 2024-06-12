@@ -1,0 +1,29 @@
+<?php
+
+class calculo{
+
+public int $num1;
+public int $num2;
+
+public function divisao($num1, $num2)
+    {
+        try{
+            if (($num1 == 0) || ($num2 == 0)) {
+                throw new Exception('Numero inválido, não pode ser igual a 0, 
+                                    por favor digitar um numero valido');
+            } 
+        
+            else{
+                return  $num1/$num2;           
+            }
+        }catch (Exception $e)
+        {
+            echo 'Execeção capturada: ' . $e->getMessage() . "\n";
+        }
+    }
+}
+
+$divisao = new calculo();
+echo ($divisao->divisao(0,5));
+
+?>
